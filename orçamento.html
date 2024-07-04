@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orçamento.css">
+    <script defer src="orçamento.js"></script>
+    <link rel="shortcut icon" href="cores/logo site.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pré-orçamento</title>
+</head>
+<body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="cores/MI.png" alt="MI Logo">
+                </div>
+                
+                <div class="menu">
+                    <div class="menu-links">
+                        <ul>
+                        <li class="nav-item"><a class="linknav" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="linknav" href="orçamento.html">Pré-orçamento</a></li>
+                        <li class="nav-item"><a class="linknav" href="materiais.html">Materiais</a></li>
+                        <li class="nav-item"><a class="linknav" href="#contatos">Contatos</a></li>
+                    </ul>
+                    </div>
+                    <div class="frase">
+                    <p>Solicite seu pré-orçamento e transforme seus ambientes com mármore.</p>
+                </div>
+                </div>
+                <div class="mobileiconmenu">
+                    <button onclick="menuShow()"><img class="icon" src="cores/menu_white_36dp.svg" alt=""></button>
+                </div>
+            </nav>
+                <div class="mobilemenu">
+                    <div class="menu-links">
+                        <ul>
+                            <li class="nav-item"><a class="linknav" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="linknav" href="orçamento.html">Pré-orçamento</a></li>
+                            <li class="nav-item"><a class="linknav" href="materiais.html">Materiais</a></li>
+                            <li class="nav-item"><a class="linknav" href="#contatos">Contatos</a></li>
+                        </ul>
+                         
+                    </div>
+                </div> 
+            </header>
+        
+        <section id="pre-orcamento">
+            <div class="background-section">
+                <img src="cores/background.jpg" alt="background">
+            </div>
+            <div class="content-container">
+                <div class="form-container">
+                    <h2>Solicite seu Pré-orçamento</h2>
+                    <form id="orcamento-form">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+    
+                        <label for="largura">Largura (cm):</label>
+                        <input type="number" id="largura" name="largura" required>
+    
+                        <label for="comprimento">Comprimento (cm):</label>
+                        <input type="number" id="comprimento" name="comprimento" required>
+    
+                        <label for="material">Material:</label>
+                        <select id="material" name="material" required>
+                            <option value="">Selecione o material</option>
+                            <option value="AMARELO CAPRI">AMARELO CAPRI</option>
+                            <option value="AMARELO FLORENÇA">AMARELO FLORENÇA</option>
+                            <option value="AMARELO HUMAITA">AMARELO HUMAITA</option>
+                            <option value="AMARELO LARANJA">AMARELO LARANJA</option>
+                            <option value="AMARELO ICARAI">AMARELO ICARAI</option>
+                            <option value="AMARELO ORNAMENTAL">AMARELO ORNAMENTAL</option>
+                            <option value="AMARELO VITORIA">AMARELO VITORIA</option>
+                            <option value="BRANCO CEARÁ">BRANCO CEARÁ</option>
+                            <option value="BRANCO DALLAS">BRANCO DALLAS</option>
+                            <option value="BRANCO ITAUNAS">BRANCO ITAUNAS</option>
+                            <option value="BRANCO RAJADO">BRANCO RAJADO</option>
+                            <option value="BRANCO PARANÁ">BRANCO PARANÁ</option>
+                            <option value="BRANCO SIENA">BRANCO SIENA</option>
+                            <option value="BRANCO VITORIA">BRANCO VITORIA</option>
+                            <option value="BEGE DUNAS">BEGE DUNAS</option>
+                            <option value="CAFÉ IMPERIAL">CAFÉ IMPERIAL</option>
+                            <option value="CINZA ANDORINHA">CINZA ANDORINHA</option>
+                            <option value="CINZA CORUMBA">CINZA CORUMBA</option>
+                            <option value="CINZA OCRE TABIRA">CINZA OCRE TABIRA</option>
+                            <option value="MARROM ABSOLUTO">MARROM ABSOLUTO</option>
+                            <option value="MARROM BAHIA">MARROM BAHIA</option>
+                            <option value="MARROM GUAIBA">MARROM GUAIBA</option>
+                            <option value="MARROM IMPERIAL">MARROM IMPERIAL</option>
+                            <option value="MARROM SÃO P.">MARROM SÃO P.</option>
+                            <option value="ROSA CURITIBA">ROSA CURITIBA</option>
+                            <option value="PRETO ABSOLUTO">PRETO ABSOLUTO</option>
+                            <option value="PRETO FLORIDO">PRETO FLORIDO</option>
+                            <option value="PRETO INDIANO">PRETO INDIANO</option>
+                            <option value="PRETO SÃO GABRIEL">PRETO SÃO GABRIEL</option>
+                            <option value="PRETO VIA LÁCTEA">PRETO VIA LÁCTEA</option>
+                            <option value="TRAVERTINO NACIONAL">TRAVERTINO NACIONAL</option>
+                            <option value="VERDE LABRADOR">VERDE LABRADOR</option>
+                            <option value="VERMELHO CAPÃO B.">VERMELHO CAPÃO B.</option>
+                        </select>
+    
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div id="resultado">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="rodape">
+            <div class="info">
+                    <h2>| INFORMAÇÕES</h2>
+                    <p>Endereço: R. Reinhold Muller, 311 - Guarituba</p>
+                    <p>Email: irimarborges03@gmail.com</p>
+            </div>
+             <div class="contatos">
+                <h2 id="contatos">| FALE CONOSCO</h2>
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/marmoraria_irimar/" class="footer_link" id="instagram" target="_blank">
+                            <i class="fab fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://wa.me/5541998474063" class="footer_link" id="whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+        </footer>
+</body>
+</html>
